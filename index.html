@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Shuai Fu - Academic Page</title>
+  <title>Shuai Fu</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,6 +13,10 @@
     <div id="header-container"></div>
 
     <h2>Research</h2>
+    <!-- <p>
+      I'm interested in computer vision, deep learning, and image processing. Representative papers are highlighted.
+    </p> -->
+
     <div id="papers-container"></div>
 
     <table style="width:100%; border:0; border-spacing:0; padding:10px; margin-top:50px;">
@@ -39,7 +43,7 @@
         })
         .catch(error => console.error('Error loading component:', error));
     }
-    
+
     document.addEventListener("DOMContentLoaded", function() {
       loadComponent('header-container', 'components/header.html');
       loadComponent('papers-container', 'components/papers.html');
