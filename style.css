@@ -1,0 +1,96 @@
+/* Global font and layout settings */
+body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Links */
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+}
+td {
+  vertical-align: middle;
+}
+
+/* Header section */
+.header-text {
+  width: 70%;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+.header-img {
+  width: 30%;
+  text-align: center;
+}
+.profile-pic {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Paper List Styles */
+.paper-item {
+  padding: 20px 0;
+}
+.paper-img {
+  width: 25%;
+  padding-right: 20px;
+  vertical-align: top;
+}
+.paper-img img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+}
+.paper-content {
+  width: 75%;
+  vertical-align: top;
+}
+.paper-title {
+  font-weight: bold;
+  color: #000;
+  display: block;
+}
+.sub-text {
+  font-size: 13px;
+}
+.highlight {
+  color: #d20;
+}
