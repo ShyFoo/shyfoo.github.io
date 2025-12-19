@@ -97,3 +97,18 @@ h2 {
 .highlight {
   color: #d20;
 }
+
+section {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+h2 {
+  border-bottom: 1px solid #eee; /* Underline for section titles */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px; /* Space between list items */
+  line-height: 1.6;
+}
