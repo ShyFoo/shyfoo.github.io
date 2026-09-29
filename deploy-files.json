@@ -1,7 +1,6 @@
 [
   ".nojekyll",
   "README.md",
-  "THIRD_PARTY_NOTICES.md",
   "components/awards.html",
   "components/header.html",
   "components/news.html",
