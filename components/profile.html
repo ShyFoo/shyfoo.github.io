@@ -1,0 +1,33 @@
+<div class="profile-top">
+<div class="portrait-wrap"><img alt="Shuai Fu" class="portrait" height="168" src="figures/portrait.jpg" width="168"/></div>
+<div class="identity"><h1>Shuai Fu</h1><p class="role">PhD Candidate</p><p class="affiliation">Adelaide University</p><p class="location"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Adelaide, Australia</p><p class="motto"><em>“Curiosity over conformity.”</em></p></div>
+</div>
+<div aria-label="Contact links" class="contact-list">
+<button aria-controls="details-dialog" aria-haspopup="dialog" class="contact-link" id="email-contact"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 6 9 7 9-7"></path></svg>Email</button>
+<a class="contact-link" href="https://scholar.google.com.hk/citations?user=QXoLj2oAAAAJ&amp;hl" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6Z"></path><path d="M6 12v5c3 3 9 3 12 0v-5M22 9v8"></path></svg>Google Scholar<span aria-hidden="true">↗</span></a>
+<a class="contact-link" href="https://github.com/ShyFoo" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m8 5-6 7 6 7m8-14 6 7-6 7m-3-16-2 18"></path></svg>GitHub<span aria-hidden="true">↗</span></a>
+<a class="contact-link" href="https://www.linkedin.com/in/shuai-fu-0599aa33a/" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="3"></rect><path d="M7 10v7M11 17v-7m0 3a3 3 0 0 1 6 0v4"></path><circle cx="7" cy="7" r=".6"></circle></svg>LinkedIn<span aria-hidden="true">↗</span></a>
+</div>
+<section aria-label="Collect seven Dragon Balls" class="toybox" id="dragon-playground">
+<p class="toy-caption">A little distraction</p>
+<div class="toy-stage" id="toy-stage">
+<canvas aria-describedby="toy-instructions" aria-label="Dragon Ball collection, 1 of 7" id="toy-canvas" role="application" tabindex="0">Collect all seven Dragon Balls. Drag and throw them, or click an empty spot to collect the next one.</canvas>
+<div aria-hidden="true" class="dragon-perch" id="dragon-perch"><img alt="" class="dragon-art" decoding="async" height="1536" src="figures/shenron.png" width="1024"/></div>
+<button aria-label="Restart the Dragon Ball collection" class="icon-button toy-reset" id="reset-toy" title="Start collecting again"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2.5 8M3 4v6h6"></path></svg></button>
+<span aria-hidden="true" class="toy-corner-label" id="dragon-count">1 / 7 collected</span>
+</div>
+<p aria-live="polite" class="toy-hint" id="toy-hint">Collect all seven. Make a wish.</p>
+<p class="toy-help" id="toy-instructions">Click to collect. Drag to play.<span class="sr-only"> Click an empty spot or press Space to collect the next Dragon Ball. Arrow keys nudge the balls; R restarts. Seven equally sized balls, with one to seven stars. Collect all seven and Shenron appears once. After dismissing him or making a wish, use the reset button or R and collect all seven again.</span></p>
+<form class="dragon-wish-form" hidden="" id="dragon-wish-form">
+<label class="sr-only" for="dragon-wish-input">Your wish</label>
+<input autocomplete="off" id="dragon-wish-input" maxlength="160" name="wish" placeholder="A little wish…" required="" type="text"/>
+</form>
+<div aria-live="polite" class="dragon-wish-result" hidden="" id="dragon-wish-result">
+<p class="dragon-wish-echo" id="dragon-wish-echo"></p>
+<p>Your wish has been heard by Shenron.</p>
+</div>
+<div class="dragon-actions">
+<button class="dragon-wish-submit" form="dragon-wish-form" hidden="" id="make-wish-button" type="submit">Make a wish</button>
+<button aria-controls="dragon-perch" aria-label="Dismiss Shenron" class="dragon-dismiss" hidden="" id="dismiss-dragon" type="button">Dismiss</button>
+</div>
+</section>

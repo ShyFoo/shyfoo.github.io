@@ -1,93 +1,49 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Shuai Fu - Academic Page</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-  
-<body>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Shuai Fu, PhD candidate at Adelaide University. Research on controllable image generation, world consistency, and evaluation." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<title>Shuai Fu — Academic Homepage</title>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%232d52de'/%3E%3Cpath d='M17 19l10 16v12m10-28v28m0-28l12 28V19' fill='none' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
 
-  <div class="container">
-    
-    <div id="header-container"></div>
 
-    <div style="margin-top: 10px; margin-bottom: 15px; font-size: 14px;">
-      Email: fus.jayce [at] gmail [dot] com
-    </div>
-    
-    <div id="news-container"></div>
-    
-    <h2>Representative Research</h2>
-  
-    <div id="papers-container"></div>
 
-    <div id="awards-container"></div>
-    
-    <div id="services-container"></div>
-    
-    <div id="teaching-container"></div>
-    
-    <script defer src="https://events.vercount.one/js"></script>
-    
-    <div style="text-align: center; margin-top: 25px;">
-      <p style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 15px; color: #555; margin: 0;">
-        &ldquo;Curiosity over conformity.&rdquo;
-      </p>
-    </div>
-    
-    <table style="width:100%; border:0; border-spacing:0; padding:10px; margin-top:10px;">
-      <tr>
-        <td style="padding:2px; text-align:center; font-size:12px; color:#888;">
-          <p>
-            My design is inspired by <a href="https://jonbarron.info/">Jon Barron's website</a>.
-          </p>
-        </td>
-      </tr>
-    </table>
-    
-  </div> 
-
-  <script>
-    /**
-     * Fetches HTML content from a file and injects it into a specific DOM element.
-     * @param {string} elementId - The ID of the container element (e.g., 'header-container').
-     * @param {string} filePath - The path to the HTML component file (e.g., 'components/header.html').
-     */
-    function loadComponent(elementId, filePath) {
-      fetch(filePath)
-        .then(response => {
-          if (!response.ok) throw new Error('Network response was not ok');
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById(elementId).innerHTML = data;
-        })
-        .catch(error => console.error(`Error loading component from ${filePath}:`, error));
-    }
-
-    // Execute when the DOM is fully loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      
-      // Load Header
-      loadComponent('header-container', 'components/header.html');
-      
-      // Load News
-      loadComponent('news-container', 'components/news.html');
-
-      // Load Papers (Research)
-      loadComponent('papers-container', 'components/papers.html');
-      
-      // Load Awards
-      loadComponent('awards-container', 'components/awards.html');
-      
-      // Load Services
-      loadComponent('services-container', 'components/services.html');
-      
-      // Load Teaching
-      loadComponent('teaching-container', 'components/teaching.html');
-    });
-  </script>
-
+<script src="js/load-components.js" type="module"></script></head>
+<body><noscript>Please enable JavaScript to load the page sections.</noscript>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site-shell">
+<aside aria-label="Profile and contacts" class="sidebar" data-component="components/profile.html"></aside>
+<div class="main-column">
+<header class="topbar">
+<nav aria-label="Main navigation" class="nav-tabs" role="tablist">
+<button aria-controls="panel-about" aria-selected="true" data-view="about" id="tab-about" role="tab">About me</button>
+<button aria-controls="panel-publications" aria-selected="false" data-view="publications" id="tab-publications" role="tab" tabindex="-1">Publications</button>
+<button aria-controls="panel-teaching" aria-selected="false" data-view="teaching" id="tab-teaching" role="tab" tabindex="-1">Teaching</button>
+<button aria-controls="panel-awards" aria-selected="false" data-view="awards" id="tab-awards" role="tab" tabindex="-1">Awards</button>
+<button aria-controls="panel-service" aria-selected="false" data-view="service" id="tab-service" role="tab" tabindex="-1">Service</button>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="tab-about" class="view" id="panel-about" role="tabpanel" tabindex="0">
+<h2>A little about me</h2>
+<div class="bio" data-component="components/header.html"></div>
+<section aria-labelledby="news-heading" class="news" data-component="components/news.html"></section>
+</section>
+<section aria-labelledby="tab-publications" class="view" hidden="" id="panel-publications" role="tabpanel" tabindex="0"><h2>Publications</h2><div data-component="components/papers.html"></div></section>
+<section aria-labelledby="tab-teaching" class="view" hidden="" id="panel-teaching" role="tabpanel" tabindex="0"><h2>Teaching</h2><div data-component="components/teaching.html"></div></section>
+<section aria-labelledby="tab-awards" class="view" hidden="" id="panel-awards" role="tabpanel" tabindex="0"><h2>Awards</h2><div data-component="components/awards.html"></div></section>
+<section aria-labelledby="tab-service" class="view" hidden="" id="panel-service" role="tabpanel" tabindex="0"><h2>Academic Services</h2><div data-component="components/services.html"></div></section>
+</main>
+<footer>© Shuai Fu</footer>
+</div>
+</div>
+<button aria-label="A shy robot. Move your pointer over it or tap to make it disappear." class="robot" id="robot" title="I'm a little shy."><span class="robot-bubble" id="robot-bubble">oh, hello.</span><span aria-hidden="true" class="robot-emoji">🤖</span><span aria-hidden="true" class="robot-shadow"></span></button>
+<div aria-hidden="true" class="robot-echo" id="robot-echo">✦</div>
+<dialog aria-labelledby="dialog-title" id="details-dialog"><div class="dialog-top"><span class="dialog-eyebrow" id="dialog-eyebrow">RESEARCH</span><button aria-label="Close details" class="icon-button" id="close-dialog">×</button></div><h2 id="dialog-title"></h2><div id="dialog-body"></div></dialog>
+<div aria-hidden="true" class="dragon-sky"></div>
 </body>
 </html>
